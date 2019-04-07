@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/opensans.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/opensansbold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/opensans.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/opensansbold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@main-color: #444444;
+@bg-main: #ffffff;
+
+.indents() {
+  margin: 0;
+  padding: 0;
+}
+
+.text(@font-size,@line-height,@font-weight:normal) {
+  font-size: @font-size;
+  line-height: @line-height;
+  font-weight: @font-weight;
+}
+
+*,*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  width: 320px;
+  margin: auto;
+  font-family: "Open Sans","Arial", sans-serif;
+}
