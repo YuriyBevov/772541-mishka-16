@@ -2,8 +2,6 @@
 
 @name-color: #000000;
 
-.products {}
-
 .products__wrapper {
   width: 260px;
   height: 100%;
@@ -12,7 +10,7 @@
 
 .products__list {
   list-style: none;
-  .indents();
+  .no-indents();
 }
 
 .products__name {
@@ -24,9 +22,7 @@
 }
 
 .products__title {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
+  .text(17px, 24px, bold);
   margin: 0;
   margin-bottom: 30px;
   color: @products-title;
@@ -37,6 +33,12 @@
  .text(15px,24px);
   margin: 0;
   margin-bottom: 33px;
+  color: @main-color;
+  background-color: @bg-main;
+}
+
+.products__property {
+  .text(15px, 20px);
   color: @main-color;
   background-color: @bg-main;
 }

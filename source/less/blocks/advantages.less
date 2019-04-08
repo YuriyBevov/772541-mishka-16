@@ -1,12 +1,9 @@
 @advantages-main: #000000;
 
-.advantages {}
-
 .advantages__wrapper {
   width: 260px;
   margin: auto;
   margin-bottom: 60px;
-  outline: 1px solid red;
 }
 
 .advantages__title {
@@ -20,13 +17,11 @@
 
 .advantages__list {
   list-style: none;
-  .indents();
+  .no-indents();
 }
 
 .advantages__item {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
+  .text(17px, 20px, bold);
   margin-bottom: 31px;
   color: @advantages-main;
   background-color: @bg-main;
