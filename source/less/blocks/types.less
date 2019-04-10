@@ -1,0 +1,35 @@
+.types__title {
+  display: block;
+  .text(27px,30px);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 76px;
+  margin-bottom: 120px;
+}
+
+.types__list {
+  list-style: none;
+  .no-indents();
+}
+
+.types__link {
+  display: block;
+  text-decoration: none;
+  width: 110px;
+  padding: 30px;
+  color: @color-text--white;
+}
+
+.types__item {
+  .text(19px,24px);
+  font-weight: bold;
+  &:nth-child(1) {
+    background-color: @color-bg__types--interier;
+  }
+  &:nth-child(2) {
+    background-color: @color-bg__types--toys;
+  }
+  &:last-child {
+    margin-bottom: 34px;
+  }
+}
