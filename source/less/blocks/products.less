@@ -1,6 +1,3 @@
-@products-title: #63d1bb;
-
-@name-color: #000000;
 
 .products__wrapper {
   width: 260px;
@@ -15,32 +12,34 @@
 
 .products__name {
   display: block;
-  .text(25px,30px bold);
+  .text(25px,30px);
+  font-weight: bold;
   margin-bottom: 8px;
-  color: @name-color;
-  background-color: @bg-main;
+  color: @color-text;
+  background-color: @color-bg;
 }
 
 .products__title {
-  .text(17px, 24px, bold);
+  .text(17px, 24px);
+  font-weight: bold;
   margin: 0;
   margin-bottom: 30px;
-  color: @products-title;
-  background-color: @bg-main;
+  color: @color-text__products-title;
+  background-color: @color-bg;
 }
 
 .products__description {
  .text(15px,24px);
   margin: 0;
   margin-bottom: 33px;
-  color: @main-color;
-  background-color: @bg-main;
+  color: @color-text--lightgrey;
+  background-color: @color-bg;
 }
 
 .products__property {
   .text(15px, 20px);
-  color: @main-color;
-  background-color: @bg-main;
+  color: @color-text--lightgrey;
+  background-color: @color-bg;
 }
 
 .products__img {
@@ -48,23 +47,25 @@
 }
 
 .products__price-text {
-  .text(17px,24px,bold);
+  .text(17px,24px);
+  font-weight: bold;
   margin: 0;
   margin-bottom: 28px;
   text-align: center;
-  color: @main-color;
-  background-color: @bg-main;
+  color: @color-text--lightgrey;
+  background-color: @color-bg;
 }
 
 .products__button {
   display: block;
   width: 260px;
-  .text(17px,20px,bold);
+  .text(17px,20px);
+  font-weight: bold;
   margin-bottom: 36px;
   padding: 15px 0;
   text-decoration: none;
   text-align: center;
-  border: 2px solid @main-color;
-  color: @main-color;
-  background-color: @bg-main;
+  border: 2px solid @color-text--lightgrey;
+  color: @color-text--lightgrey;
+  background-color: @color-bg;
 }

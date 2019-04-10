@@ -1,11 +1,6 @@
-@main-catalog-item: #000000;
-@bg-catalog-item: #ffffff;
-@br-catalog-item: #ececec;
-
-
 .catalog-item {
   margin-bottom: 30px;
-  border: 1px solid @br-catalog-item;
+  border: 1px solid @color-br;
 }
 
 .catalog-item__title{
@@ -18,22 +13,24 @@
 
 .catalog-item__link {
   display: block;
-  .text(17px, 24px, bold);
+  .text(17px, 24px);
+  font-weight: bold;
   text-decoration: none;
   margin-bottom: 17px;
-  color: @main-catalog-item;
-  background-color: @bg-catalog-item;
+  color: @color-text;
+  background-color: @color-bg;
 }
 
 .catalog-item__description {
   .text(13px, 30px);
   .no-indents;
   padding-bottom:30px;
-  border-bottom: 1px solid @br-catalog-item;
-  color: #444444;
-  background-color: @bg-catalog-item;
+  border-bottom: 1px solid @color-br;
+  color: @color-text--lightgrey;
+  background-color: @color-bg;
 }
 
 .catalog-item__price {
-  .text(15px, 24px, bold);
+  .text(15px, 24px);
+  font-weight: bold;
 }
