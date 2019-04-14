@@ -7,3 +7,24 @@
   margin: 0 auto;
   padding: 30px;
 }
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 768px;
+  }
+  .main-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .main-footer__wrapper {
+    max-width: 1150px;
+  }
+}
