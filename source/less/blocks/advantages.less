@@ -8,7 +8,6 @@
   font-weight: bold;
   margin: 0;
   margin-bottom: 31px;
-
   color: @color-text;
   background-color: @color-bg;
 }
@@ -100,9 +99,16 @@
 
 @media (min-width: @tablet-width) {
   .advantages__wrapper {
-    width: 768px;
-    padding: 60px 51px 20px 51px;
+    width: @tablet-width;
+    max-width: 1150px;
+    padding: 0 50px;
   }
+
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
   .advantages__title {
     .text(43px, 50px);
   }
@@ -116,9 +122,13 @@
 
 @media (min-width: @desctop-width) {
   .advantages__wrapper {
-    width: 1050px;
-    padding: 70px 175px 32px 175px;
-    outline: 1px solid red;
+    width: @desctop-width;
+    padding: 0 225px;
+  }
+
+  .advantages {
+    padding-top: 70px;
+    padding-bottom: 32px;
   }
   .advantages__title {
     .text(53px, 57px);

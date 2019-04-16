@@ -4,7 +4,6 @@
   background-position: bottom;
   background-repeat: no-repeat;
   padding-bottom: 41px;
-  margin-bottom: 27px;
 }
 
 .products__wrapper {
@@ -95,8 +94,10 @@
 
 @media (min-width: @tablet-width) {
   .products__wrapper {
-    width: 100%;
+    width: @tablet-width;
     max-width: 1150px;
+    padding: 0 50px;
+
   }
   .products__name {
     .text(43px, 50px);

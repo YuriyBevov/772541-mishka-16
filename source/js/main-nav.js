@@ -1,4 +1,4 @@
-  var navMain = document.querySelector('.main-nav');
+  /*var navMain = document.querySelector('.main-nav__item');
   var navToggle = document.querySelector('.main-nav__toggle');
 
   navMain.classList.remove('main-nav--nojs');
@@ -14,3 +14,4 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
+*/
