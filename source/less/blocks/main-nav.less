@@ -34,15 +34,18 @@
   text-decoration: none;
   color: @color-text;
   background-color: @color-bg;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item--logo {
   padding: 22px 0;
   justify-content: center;
-}
-
-.main-nav__link--logo {
-
 }
 
 @media (min-width: @tablet-width) {
