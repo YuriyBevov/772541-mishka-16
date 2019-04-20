@@ -1,12 +1,9 @@
-.products__wrapper {
-  position: relative;
-  width: 260px;
-  margin: 0 auto;
+.container {
+  .container();
+}
+
+.products {
   padding: 35px 0;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
 }
 
 .products__list {
@@ -91,11 +88,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .products__wrapper {
-    width: @tablet-width;
-    max-width: 1150px;
-    padding: 43px 50px 50px 50px;
-    margin-top: -10px;
+  .products {
+    position: relative;
+    padding: 43px 0 53px 0;
+    margin-top: -15px;
     background-image: url("../img/bg-zigzag-line.svg"), url("../img/bg-zigzag-fill.svg");
     background-size: 100%, 100%;
     background-position: bottom, top;
@@ -103,7 +99,7 @@
     z-index: 1;
   }
 
-  .container {
+  .products__wrapper {
     width: 290px;
   }
 
@@ -158,14 +154,13 @@
 }
 
 @media (min-width: @desctop-width) {
-  .products__wrapper {
-    width: @desctop-width;
-    max-width: 1150px;
+  .container {
+    .container();
     padding: 180px 50px 73px 50px;
     margin-top: -15px;
   }
 
-  .container {
+  .products__wrapper {
     width: 350px;
     order: 2;
     margin-left: 175px;

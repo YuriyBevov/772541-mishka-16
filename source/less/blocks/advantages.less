@@ -1,4 +1,8 @@
-.advantages__wrapper {
+.container {
+  .container();
+}
+
+.advantages {
   width: 260px;
   margin: 0 auto;
 }
@@ -31,7 +35,7 @@
   background-color: @color-bg;
 }
 
-.advantages__item--flower svg{
+/*.advantages__item--flower svg{
   position: absolute;
   top: 0;
   left: 9px;
@@ -73,7 +77,7 @@
   path {
     fill: #63d1bb;
   }
-}
+}*/
 
 .advantages__item--rocket svg{
   position: absolute;
@@ -98,13 +102,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages__wrapper {
-    width: @tablet-width;
-    max-width: 1150px;
-    padding: 0 50px;
-  }
-
   .advantages {
+    width: @tablet-width;
     padding-top: 60px;
     padding-bottom: 20px;
   }
@@ -139,12 +138,11 @@
 }
 
 @media (min-width: @desctop-width) {
-  .advantages__wrapper {
-    width: @desctop-width;
-    padding: 0 225px;
+  .container {
+    .container();
   }
-
   .advantages {
+    width: @desctop-width;
     padding-top: 70px;
     padding-bottom: 32px;
   }

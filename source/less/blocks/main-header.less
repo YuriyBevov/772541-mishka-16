@@ -1,3 +1,11 @@
+.container {
+  .container();
+
+}
+.main-header .container {
+  padding: 0;
+}
+/*
 .main-header__wrapper {
   position: relative;
   display: flex;
@@ -6,20 +14,18 @@
   width: 320px;
   margin: 0 auto;
 }
+*/
+
 
 @media (min-width: @tablet-width) {
+
   .main-header {
-    border-bottom: 1px solid @color-br;
+    background: linear-gradient(to bottom, @color-bg 0px, @color-bg 88px, #f9f9f9 89px, #f9f9f9 100%);
   }
-  .main-header__wrapper {
-    width: @tablet-width;
-    padding: 0 50px;
-    min-height: 88px;
-  }
+
+
 }
 
 @media (min-width: @desctop-width) {
-  .main-header__wrapper {
-    min-width: 1150px;
-  }
+
 }
