@@ -1,14 +1,6 @@
-.container {
+.products__container {
   .container();
-}
-
-.products {
-  padding: 35px 0;
-}
-
-.products__list {
-  list-style: none;
-  .no-indents();
+  padding: 35px 30px;
 }
 
 .products__name {
@@ -60,10 +52,6 @@
   margin-right: 30px;
 }
 
-.products__img {
-  margin-bottom: 29px;
-}
-
 .products__price-text {
   .text(17px, 24px);
   font-weight: bold;
@@ -90,7 +78,6 @@
 @media (min-width: @tablet-width) {
   .products {
     position: relative;
-    padding: 43px 0 53px 0;
     margin-top: -15px;
     background-image: url("../img/bg-zigzag-line.svg"), url("../img/bg-zigzag-fill.svg");
     background-size: 100%, 100%;
@@ -99,8 +86,15 @@
     z-index: 1;
   }
 
+  .products__item {
+    padding: 35px 0;
+  }
+
   .products__wrapper {
+    display: flex;
+    flex-direction: column;
     width: 290px;
+    outline: 1px solid red;
   }
 
   .products__name {
@@ -142,18 +136,13 @@
     flex-wrap: wrap;
   }
 
-  .products__img {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    width: 333px;
-    height: 404px;
-    background-image: url("../img/triple-set-tablet@1x.jpg");
-    background-size: 333px 404px;
-  }
 }
 
 @media (min-width: @desctop-width) {
+.products {
+  margin-top: -25px;
+}
+
   .container {
     .container();
     padding: 180px 50px 73px 50px;
@@ -195,19 +184,4 @@
     width: 291px;
   }
 
-  .products__img {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    width: 525px;
-    height: 636px;
-    background-image: url("../img/triple-set-desktop@1x.jpg");
-    background-size: 525px 636px;
-    z-index: 1;
-  }
-
-  .products__button {
-    margin-left: 175px;
-
-  }
 }

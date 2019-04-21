@@ -1,6 +1,6 @@
 .catalog__header {
   color: @color-text;
-  background-color: @color-bg;
+  background-color: @color-bg--lightgrey;
   padding: 75px 0;
   text-align: center;
 }
@@ -11,13 +11,34 @@
   font-weight: bold;
 }
 
-.catalog__wrapper {
-  width: 260px;
-  padding-top: 30px;
-  margin: auto;
+.catalog__container {
+  .container();
+
+  @media (max-width: mobile-width-only) {
+    padding: 30px 30px;
+  }
 }
 
 .catalog__list {
   .no-indents;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__header {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+  }
+
+  .catalog__title {
+    .text(43px, 50px);
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .catalog__title {
+    .text(53px, 57px);
+  }
 }

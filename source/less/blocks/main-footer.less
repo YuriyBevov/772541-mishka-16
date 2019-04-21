@@ -5,7 +5,7 @@
   background-color: @color-bg--lightgrey;
 }
 
-.container {
+.main-footer__container {
   .container();
 }
 
@@ -14,9 +14,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-footer__wrapper {
+  .main-footer {
     flex-direction: row;
-    width: @tablet-width;
+  }
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
     padding: 60px 50px;
   }
   .main-footer__logo {
@@ -25,7 +28,5 @@
 }
 
 @media (min-width: @desctop-width) {
-  .main-footer__wrapper {
-    width: @desctop-width;
-  }
+
 }

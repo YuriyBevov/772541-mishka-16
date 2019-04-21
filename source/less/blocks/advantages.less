@@ -1,12 +1,15 @@
-.container {
-  .container();
-}
-
 .advantages {
-  width: 260px;
   margin: 0 auto;
 }
 
+.advantages__container {
+  .container();
+      outline: 1px solid red;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 35px 30px;
+  }
+}
 .advantages__title {
   .text(25px,30px);
   font-weight: bold;
@@ -138,8 +141,8 @@
 }
 
 @media (min-width: @desctop-width) {
-  .container {
-    .container();
+  .advantages__container {
+    padding: 0 225px;
   }
   .advantages {
     width: @desctop-width;
