@@ -1,4 +1,4 @@
-*,*,
+*,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
@@ -11,6 +11,20 @@ html {
 }
 
 body {
+  margin-top: 50px;
   font-family: "Open Sans", "Arial", san-serif;
   min-width: 320px;
+  .no-indents();
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    min-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  body {
+    min-width: @desctop-width;
+  }
 }

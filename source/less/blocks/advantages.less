@@ -1,28 +1,161 @@
-.advantages__wrapper {
-  width: 260px;
-  margin: auto;
-  margin-bottom: 60px;
+.advantages {
+  margin: 0 auto;
 }
 
+.advantages__container {
+  .container();
+      outline: 1px solid red;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 35px 30px;
+  }
+}
 .advantages__title {
   .text(25px,30px);
   font-weight: bold;
   margin: 0;
   margin-bottom: 31px;
-  padding-top: 34px;
   color: @color-text;
   background-color: @color-bg;
 }
 
 .advantages__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   .no-indents();
 }
 
 .advantages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   .text(17px, 20px);
   font-weight: bold;
-  margin-bottom: 31px;
+  padding-top: 55px;
+  margin-bottom: 28px;
   color: @color-text;
   background-color: @color-bg;
+}
+
+/*.advantages__item--flower svg{
+  position: absolute;
+  top: 0;
+  left: 9px;
+  width: 32px;
+  height: 37px;
+  path {
+    fill: #63d1bb;
+  }
+}
+
+.advantages__item--price svg{
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 47px;
+  height: 27px;
+  path {
+    fill: #63d1bb;
+  }
+}
+
+.advantages__item--heart svg{
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 34px;
+  height: 27px;
+  path {
+    fill: #63d1bb;
+  }
+}
+
+.advantages__item--yarn svg{
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 35px;
+  height: 34px;
+  path {
+    fill: #63d1bb;
+  }
+}*/
+
+.advantages__item--rocket svg{
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 55px;
+  height: 23px;
+  path {
+    fill: #63d1bb;
+  }
+}
+
+.advantages__item--gift svg{
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 33px;
+  height: 32px;
+  path {
+    fill: #63d1bb;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: @tablet-width;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .advantages__title {
+    .text(43px, 50px);
+  }
+
+  .advantages__item {
+    width: 333px;
+    .text(20px, 22px);
+    margin-bottom: 62px;
+  }
+}
+
+.advantages__item {
+  &--yarn {
+    order: 2;
+  }
+  &--price {
+    order: 3;
+  }
+  &--rocket {
+    order: 4;
+  }
+  &--heart {
+    order: 5;
+  }
+  &--gift {
+    order: 6;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .advantages__container {
+    padding: 0 225px;
+  }
+  .advantages {
+    width: @desctop-width;
+    padding-top: 70px;
+    padding-bottom: 32px;
+  }
+  .advantages__title {
+    .text(53px, 57px);
+  }
+
+  .advantages__item {
+    width: 350px;
+    .text(20px, 23px);
+    margin-bottom: 57px;
+  }
 }

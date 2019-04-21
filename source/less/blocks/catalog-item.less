@@ -34,3 +34,37 @@
   .text(15px, 24px);
   font-weight: bold;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog-item__wrapper {
+    width: 335px;
+  }
+
+  .catalog-item__link {
+    .text(20px, 24px);
+  }
+
+  .catalog-item__description {
+    .text(15px, 30px);
+  }
+
+  .catalog-item__price {
+    .text(17px, 24px);
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog-item {
+    flex-direction: column;
+  }
+}

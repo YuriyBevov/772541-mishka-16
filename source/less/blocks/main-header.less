@@ -1,4 +1,14 @@
-.main-header__wrapper {
-  width: 320px;
-  margin: 0 auto;
+.main-header__container {
+  .container();
+  outline: 1px solid red;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    background: linear-gradient(to bottom, @color-bg 0px, @color-bg 88px, @color-br 88px, @color-br 89px, @color-bg--lightgrey 89px, @color-bg--lightgrey 100%);
+  }
+}
+
+@media (min-width: @desctop-width) {
+
 }
