@@ -32,12 +32,22 @@
     background-size: 100%;
   }
 
+  .main-header--catalog {
+    background: linear-gradient(to bottom, @color-bg 0px, @color-bg 88px, @color-br 88px, @color-br 89px,
+      @color-bg--lightgrey 89px, @color-bg--lightgrey 100%);
+  }
+
   .catalog__title {
     .text(43px, 50px);
   }
 }
 
 @media (min-width: @desctop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .catalog__title {
     .text(53px, 57px);
   }

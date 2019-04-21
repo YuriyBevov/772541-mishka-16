@@ -4,11 +4,7 @@
 
 .advantages__container {
   .container();
-      outline: 1px solid red;
-
-  @media (max-width: @mobile-width-only) {
-    padding: 35px 30px;
-  }
+  padding: 35px 30px;
 }
 .advantages__title {
   .text(25px,30px);
@@ -105,6 +101,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages__item {
+    &--yarn {
+      order: 2;
+    }
+    &--price {
+      order: 3;
+    }
+    &--rocket {
+      order: 4;
+    }
+    &--heart {
+      order: 5;
+    }
+    &--gift {
+      order: 6;
+    }
+}
   .advantages {
     width: @tablet-width;
     padding-top: 60px;
@@ -119,24 +132,6 @@
     width: 333px;
     .text(20px, 22px);
     margin-bottom: 62px;
-  }
-}
-
-.advantages__item {
-  &--yarn {
-    order: 2;
-  }
-  &--price {
-    order: 3;
-  }
-  &--rocket {
-    order: 4;
-  }
-  &--heart {
-    order: 5;
-  }
-  &--gift {
-    order: 6;
   }
 }
 
