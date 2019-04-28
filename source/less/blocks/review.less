@@ -3,10 +3,20 @@
   .container();
   padding: 0 30px;
   padding-bottom: 52px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
+}
+
+.review::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 9px;
+    width: 320px;
+    height: 7px;
+    margin: 0 auto;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-repeat: no-repeat;
+    background-size: 320px 7px;
+    transform: rotate(180deg);
 }
 
 .review__title {
@@ -83,14 +93,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .review::after {
+      content: "";
+      display: block;
+      position: relative;
+      bottom: 13px;
+      width: 771px;
+      height: 15px;
+      margin: 0 auto;
+      background-image: url(../img/bg-zigzag-line.svg);
+      background-repeat: no-repeat;
+      background-size: 768px 16px;
+      transform: rotate(180deg);
+  }
 
   .review__container {
     padding-top: 84px;
     padding-bottom: 100px;
-    background-image: url("../img/bg-zigzag-line.svg"), url("../img/review@1x.jpg");
-    background-size: 100%, 350px 457px;
-    background-position: bottom, 0px 6px;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px 457px;
+    background-position: 0px 6px;
+    background-repeat: no-repeat;
   }
 
   .review__title {
@@ -133,9 +156,24 @@
 }
 
 @media (min-width: @desctop-width) {
+  .review::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 25px;
+    width: 1050px;
+    height: 23px;
+    margin: 0 auto;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-repeat: no-repeat;
+    background-size: 1050px 24px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
   .review__container {
     padding: 75px 125px 155px 226px;
-    background-position: bottom, 50px 6px;
+    background-position: 50px 6px;
   }
   .review__title {
     .text(53px, 57px);
