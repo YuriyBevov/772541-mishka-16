@@ -4,7 +4,8 @@
 
 .advantages__container {
   .container();
-  padding: 41px 30px;
+  padding: 30px;
+  padding-bottom: 28px;
 }
 .advantages__title {
   .text(25px,30px);
@@ -39,7 +40,7 @@
   &--flower::before {
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 9px;
     content: "";
     width: 50px;
     height: 50px;
@@ -51,7 +52,7 @@
   &--price::before {
     position: absolute;
     top: 2px;
-    left: 2px;
+    left: 1px;
     content: "";
     width: 50px;
     height: 50px;
@@ -62,8 +63,8 @@
 
   &--heart::before {
     position: absolute;
-    top: 3px;
-    left: 9px;
+    top: 2px;
+    left: 8px;
     content: "";
     width: 50px;
     height: 50px;
@@ -76,7 +77,7 @@
   &--yarn::before {
     position: absolute;
     top: 4px;
-    left: 5px;
+    left: 3px;
     content: "";
     width: 50px;
     height: 50px;
@@ -88,7 +89,7 @@
   &--rocket::before {
     position: absolute;
     top: 5px;
-    left: -5px;
+    left: -6px;
     content: "";
     width: 55px;
     height: 50px;
@@ -100,7 +101,7 @@
   &--gift::before {
     position: absolute;
     top: 3px;
-    left: 5px;
+    left: 3px;
     content: "";
     width: 50px;
     height: 50px;
@@ -149,20 +150,55 @@
 
 @media (min-width: @desctop-width) {
   .advantages__container {
-    padding: 0 225px;
+    padding-left: 226px;
   }
+
   .advantages {
     width: @desctop-width;
-    padding-top: 60px;
+    padding-top: 57px;
     padding-bottom: 32px;
   }
+
   .advantages__title {
     .text(53px, 57px);
+    margin-bottom: 48px;
+    margin-left: -5px;
   }
 
   .advantages__item {
     width: 350px;
     .text(20px, 23px);
     margin-bottom: 53px;
+
+      &--flower::before {
+        top: 0;
+        left: 9px;
+      }
+
+      &--price::before {
+        top: 3px;
+        left: 1px;
+      }
+
+      &--heart::before {
+        top: 4px;
+        left: 8px;
+      }
+
+
+      &--yarn::before {
+        top: 4px;
+        left: 3px;
+      }
+
+      &--rocket::before {
+        top: 6px;
+        left: -6px;
+      }
+
+      &--gift::before {
+        top: 5px;
+        left: 3px;
+      }
   }
 }

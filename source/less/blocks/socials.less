@@ -1,23 +1,43 @@
 
 .socials {
   border-bottom: 1px solid @color-br__socials;
-  padding-bottom: 30px;/*временно*/
 }
 
 .socials__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   .no-indents();
+  padding: 30px 60px;
+  padding-bottom: 24px;
+}
+
+.socials__item:nth-child(2) {
+  margin-top: -5px;
 }
 
 .socials__link {
   text-decoration: none;
   padding: 0;
+  &:hover,
+  &:focus {
+    path {
+      fill: @color-footer-hover;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
 @media (min-width: @tablet-width) {
   .socials {
+    width: 140px;
     border: none;
+  }
+
+  .socials__list {
+    padding: 12px 0;
   }
 }
