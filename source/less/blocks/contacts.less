@@ -1,0 +1,85 @@
+.contacts__container {
+  .container();
+  padding: 34px 30px 40px 30px;
+  outline: 1px solid red;
+}
+
+.contacts__title {
+  .text(18px, 30px);
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.contacts__table {
+  margin-bottom: 5px;
+}
+
+.contacts__table-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contacts__table-info {
+  width: 50px;
+  .text(15px, 30px);
+  padding: 0;
+  margin-right: 27px;
+
+}
+
+.contacts__table-description {
+  width: 180px;
+  .text(15px, 30px);
+  padding: 0;
+}
+
+.contacts__table-mail {
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: @color-text--lightgrey;
+  border-bottom: 1px solid #62D2BC;
+}
+
+.contacts__map {
+  width: 322px;
+  height: 457px;
+  margin-left: -29px;
+  margin-bottom: 39px;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-size: 320px 457px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.contacts__button {
+  display: block;
+  width: 260px;
+  .button();
+  .text(18px, 20px);
+  margin: 0 auto;
+  padding: 14px;
+}
+
+@media (min-width: 768px) {
+  .contacts__container {
+    .container();
+  }
+
+  .contacts__title {
+    .text(43px, 50px);
+  }
+
+  .contacts__table {
+    display: flex;
+    outline: 1px solid red;
+  }
+
+  .contacts__table-info {
+    .text(17px, 30px);
+  }
+
+  .contacts__table-description {
+    .text(17px, 30px);
+  }
+}

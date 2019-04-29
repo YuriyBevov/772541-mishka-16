@@ -8,6 +8,25 @@
   line-height: @line-height;
 }
 
+.button() {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid @color-text--lightgrey;
+  color: @color-text--lightgrey;
+  background-color: @color-bg;
+  &:hover,
+  &:focus {
+    color: @color-text--white;
+    background-color: @color-text--lightgrey;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+
 .container() {
   width: 320px;
   margin: 0 auto;

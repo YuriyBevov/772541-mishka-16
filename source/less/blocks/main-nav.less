@@ -23,13 +23,8 @@
   border-bottom: 1px solid @color-br;
 }
 
-.main-nav__item--delivery,
-.main-nav__item--new,
-.main-nav__item--sale {
-  display: none;
-}
-
 .main-nav__link {
+  position: relative;
   .text(17px,24px);
   font-weight: bold;
   text-decoration: none;
@@ -44,6 +39,40 @@
   }
 }
 
+  .main-nav__link-search-icon {
+    position: absolute;
+    top: 5px;
+    left: -45px;
+    opacity: 0.2;
+    &:hover,
+    &:focus {
+      path {
+        fill: @color-icon-seablue;
+      }
+    opacity: 1;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav__link-basket-icon {
+    position: absolute;
+    top: 4px;
+    left: -52px;
+    opacity: 0.2;
+    &:hover,
+    &:focus {
+      path {
+        fill: @color-icon-seablue;
+      }
+    opacity: 1;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
 .main-nav__item--logo {
   padding: 22px 0;
   justify-content: center;
@@ -52,6 +81,20 @@
 .main-nav__logo-image {
   width: 86px;
   height: 35px;
+}
+
+.main-nav__item--opened {
+  display: block;
+}
+
+.main-nav__item--closed {
+  display: none;
+}
+
+.main-nav__item--delivery,
+.main-nav__item--new,
+.main-nav__item--sale {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,13 +110,14 @@
     &:nth-child(2),
     &:nth-child(3) {
       order: 2;
-      width: 165px;
-      flex-grow: 1;
-      padding-top: 24px;
+      width: 168px;
+      padding-top: 18px;
     }
     &:nth-child(4) {
       order: 1;
-      width: 82px;
+      width: 84px;
+      border-right: 1px solid @color-br;
+      border-left: 1px solid @color-br;
     }
     &:nth-child(5) {
       justify-content: flex-end;
@@ -81,6 +125,7 @@
       flex-grow: 1;
       width: auto;
       padding: 32px 0;
+      text-align: right;
     }
   }
 
@@ -92,8 +137,9 @@
   .main-nav__item--delivery{
     display: block;
     text-align: right;
-    padding-top: 24px;
+    padding-top: 18px;
     order: 3;
+    flex-grow: 1;
   }
 
   .main-nav__item--delivery small {
@@ -118,6 +164,11 @@
     .text(17px, 24px);
   }
 
+  .main-nav__link-search-icon {
+    top: 22px;
+    left: 32px;
+  }
+
   .main-nav__logo-image {
     width: 112px;
     height: 46px;
@@ -135,7 +186,7 @@
     display: block;
     order: 4;
     width: 220px;
-    padding-top: 24px;
+    padding-top: 18px;
   }
 
   .main-nav__item--delivery {
@@ -152,9 +203,9 @@
     }
     &:nth-child(3) {
       order: 1;
-      width: 185px;
+      width: 195px;
       padding: 32px 0;
-      padding-left: 30px;
+      padding-left: 35px;
     }
 
     &:nth-child(4) {
@@ -163,7 +214,7 @@
 
     &:nth-child(5) {
       order: 3;
-      width: 265px;
+      width: 250px;
     }
   }
 

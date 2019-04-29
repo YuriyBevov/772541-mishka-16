@@ -1,6 +1,5 @@
 .catalog-item {
-  margin-bottom: 30px;
-  border: 1px solid @color-br;
+  margin-bottom: 28px;
 }
 
 .catalog-item__title{
@@ -8,7 +7,10 @@
 }
 
 .catalog-item__wrapper {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  border: 1px solid @color-br;
 }
 
 .catalog-item__link {
@@ -16,7 +18,7 @@
   .text(17px, 24px);
   font-weight: bold;
   text-decoration: none;
-  margin-bottom: 17px;
+  margin-bottom: 4px;
   color: @color-text;
   background-color: @color-bg;
 }
@@ -24,42 +26,107 @@
 .catalog-item__description {
   .text(13px, 30px);
   .no-indents;
-  padding-bottom:30px;
+  flex-grow: 1;
+  padding-bottom:19px;
   border-bottom: 1px solid @color-br;
   color: @color-text--lightgrey;
   background-color: @color-bg;
 }
 
 .catalog-item__price {
+  position: relative;
   .text(15px, 24px);
+  .no-indents();
+  padding-top: 21px;
   font-weight: bold;
+}
+
+.catalog-item__basket {
+  position: absolute;
+  top: 23px;
+  right: -11px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("img/icon-cart.svg");
+}
+
+.catalog__item-img {
+  width: 260px;
+  height: 195px;
+}
+
+.catalog-item__link-img {
+  display: block;
+  line-height: 0;
+}
+
+.catalog-item__basket-icon {
+  opacity: 0.2;
+  &:hover,
+  &:focus {
+    path {
+      fill: @color-icon-seablue;
+    }
+    opacity: 1;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .catalog-item {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 54px;
   }
 
   .catalog-item__wrapper {
-    width: 335px;
+    width: 316px;
+    flex-grow: 1;
+    padding: 25px 30px;
   }
 
   .catalog-item__link {
     .text(20px, 24px);
+    margin-bottom: 5px;
+    margin-left: -3px;
   }
 
   .catalog-item__description {
     .text(15px, 30px);
+    margin-left: -3px;
   }
 
   .catalog-item__price {
     .text(17px, 24px);
+    padding-top: 23px;
+  }
+
+  .catalog-item__basket {
+    right: -8px;
   }
 }
 
 @media (min-width: @desctop-width) {
+  .catalog__header {
+    padding: 52px 0 102px 4px;
+  }
+
+  .catalog__container {
+    padding-top: 145px;
+  }
+
   .catalog-item {
     flex-direction: column;
+  }
+
+  .catalog-item__description {
+    padding-bottom: 14px;
+  }
+
+  .catalog-item__price {
+    margin-left: -3px;
   }
 }

@@ -1,12 +1,10 @@
 .main-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: @color-bg--lightgrey;
 }
 
 .main-footer__container {
   .container();
+  padding: 0 30px;
 }
 
 .main-footer__logo {
@@ -17,16 +15,25 @@
   .main-footer {
     flex-direction: row;
   }
+
   .main-footer__container {
     display: flex;
     justify-content: space-between;
-    padding: 60px 50px;
+    padding: 51px 50px 42px 50px;
   }
+
   .main-footer__logo {
     display: block;
+    cursor: pointer;
+    margin-right: 79px;
+    &:hover,
+    &:focus {
+      path {
+        fill: #46c1ae;
+      }
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
-}
-
-@media (min-width: @desctop-width) {
-
 }
