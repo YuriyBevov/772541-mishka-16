@@ -32,10 +32,10 @@
   background-color: @color-bg;
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
   }
   &:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -81,6 +81,13 @@
 .main-nav__logo-image {
   width: 86px;
   height: 35px;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item--opened {
