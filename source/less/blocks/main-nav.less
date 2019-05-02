@@ -44,33 +44,23 @@
     top: 5px;
     left: -45px;
     opacity: 0.2;
-    &:hover,
-    &:focus {
-      path {
-        fill: @color-icon-seablue;
-      }
+  }
+
+  .main-nav__link:hover svg,
+  .main-nav__link:focus svg {
+    fill: @color-icon-seablue;
     opacity: 1;
-    }
-    &:active {
+  }
+
+    .main-nav__link:active svg{
       opacity: 0.3;
     }
-  }
 
   .main-nav__link-basket-icon {
     position: absolute;
     top: 4px;
     left: -52px;
     opacity: 0.2;
-    &:hover,
-    &:focus {
-      path {
-        fill: @color-icon-seablue;
-      }
-    opacity: 1;
-    }
-    &:active {
-      opacity: 0.3;
-    }
   }
 
 .main-nav__item--logo {
