@@ -14,23 +14,27 @@
 
 .copyright__logo {
   margin-top: -5px;
-  &:hover,
-  &:focus {
-    path {
+}
+
+.copyright__logo svg {
+  fill: #63d1bb;
+}
+  .copyright__logo:hover  svg,
+  .copyright__logo:focus  svg {
       fill: @color-footer-hover;
-    }
   }
-  &:active {
+
+  .copyright__logo:active svg {
     opacity: 0.3;
   }
-}
+
 
 @media (min-width: @tablet-width ) {
   .copyright {
     padding: 0;
     padding-top: 12px;
   }
-  copyright__title {
+  .copyright__title {
     margin-right: 29px;
   }
 }

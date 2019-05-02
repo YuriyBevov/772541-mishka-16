@@ -19,17 +19,16 @@
 .socials__link {
   text-decoration: none;
   padding: 0;
-  &:hover,
-  &:focus {
-    path {
-      fill: @color-footer-hover;
-    }
-  }
-  &:active {
-    opacity: 0.3;
-  }
 }
 
+.socials__link:hover svg,
+.socials__link:focus svg {
+  fill: @color-footer-hover;
+}
+
+  .socials__link:active svg {
+    opacity: 0.3;
+  }
 
 @media (min-width: @tablet-width) {
   .socials {

@@ -67,19 +67,19 @@
   line-height: 0;
 }
 
-.catalog-item__basket-icon {
+.catalog-item__basket svg {
   opacity: 0.2;
-  &:hover,
-  &:focus {
-    path {
-      fill: @color-icon-seablue;
-    }
+}
+
+  .catalog-item__basket:hover svg,
+  .catalog-item__basket:focus svg {
+    fill: @color-icon-seablue;
     opacity: 1;
   }
-  &:active {
+
+  .catalog-item__basket:active svg {
     opacity: 0.3;
   }
-}
 
 @media (min-width: @tablet-width) {
   .catalog-item {
