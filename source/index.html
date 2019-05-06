@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -157,38 +163,31 @@
         </section>
 
 
-        <!--<section class="contacts">
+        <section class="contacts">
           <div class="contacts__container">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__table">
-            <tr class="contacts__table-row">
-              <td class="contacts__table-info">
-                e-mail:
-              </td>
-
-              <td class="contacts__table-description">
-                <a class="contacts__table-mail" href="#">
-                  info@mimimishkashop.ru
-                </a>
-              </td>
-            </tr>
-            <tr class="contacts__table-row">
-              <td class="contacts__table-info">
-                адрес:
-              </td>
-              <td class="contacts__table-description">
-                <adress class="contacts__table-adress">
-                    г. Санкт-Петербург,</br>ул. Большая Конюшенная,</br>д. 19/8, офис 101
-                </adress>
-              </td>
-            </tr>
-          </table>
-
-          <div class="contacts__map">
+          <div class="contacts__wrapper">
+            <p class="contacts__info">e-mail:</p>
+            <a class="contacts__info contacts__info--mail" href="#">info@mimimishkashop.ru</a>
+            <p class="contacts__info">адрес:</p>
+            <adress class="contacts__info contacts__info--adress">
+              г. Санкт-Петербург,</br>ул. Большая Конюшенная,</br>д. 19/8, офис 101
+            </adress>
           </div>
+
+            <picture class="contacts__map">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+            </picture>
+
           <a class="contacts__button">Напишите нам</a>
-                  </div>
-        </section>-->
+          </div>
+        </section>
 
 
     </main>
@@ -234,6 +233,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/main-nav.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

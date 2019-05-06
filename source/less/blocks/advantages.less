@@ -76,7 +76,7 @@
   &--yarn::before {
     position: absolute;
     top: 4px;
-    left: 3px;
+    left: 5px;
     content: "";
     width: 50px;
     height: 50px;
@@ -88,7 +88,7 @@
   &--rocket::before {
     position: absolute;
     top: 5px;
-    left: -6px;
+    left: -4px;
     content: "";
     width: 55px;
     height: 50px;
@@ -100,7 +100,7 @@
   &--gift::before {
     position: absolute;
     top: 3px;
-    left: 3px;
+    left: 5px;
     content: "";
     width: 50px;
     height: 50px;
@@ -115,28 +115,53 @@
     &--yarn {
       order: 2;
     }
+
+    &--yarn::before {
+      top: 3px;
+      left: 3px;
+    }
+
     &--price {
       order: 3;
     }
+
+    &--price::before {
+      left: 0;
+    }
+
     &--rocket {
       order: 4;
+    }
+    &--rocket::before {
+      top: 7px;
+      left: -7px;
     }
     &--heart {
       order: 5;
     }
+
+    &--heart::before {
+      top: 5px;
+    }
+
     &--gift {
       order: 6;
+    }
+
+    &--gift::before {
+      top: 6px;
+      left: 2px;
     }
 }
   .advantages {
     width: @tablet-width;
-    padding-top: 37px;
-    padding-bottom: 20px;
+    padding-top: 34px;
+    padding-bottom: 25px;
   }
 
   .advantages__title {
     .text(43px, 50px);
-    margin-bottom: 48px;
+    margin-bottom: 49px;
     margin-left: -5px;
   }
 
@@ -155,7 +180,7 @@
   .advantages {
     width: @desctop-width;
     padding-top: 34px;
-    padding-bottom: 32px;
+    padding-bottom: 35px;
   }
 
   .advantages__title {
