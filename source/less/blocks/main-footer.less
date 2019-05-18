@@ -12,6 +12,7 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .main-footer {
     flex-direction: row;
   }
@@ -27,11 +28,19 @@
     cursor: pointer;
     margin-right: 79px;
   }
-    .main-footer__logo:hover svg,
-    .main-footer__logo:focus svg {
-        fill: #46c1ae;
-    }
-    .main-footer__logo:active svg {
-      opacity: 0.3;
-    }
+
+  .main-footer__logo:hover svg,
+  .main-footer__logo:focus svg {
+      fill: #46c1ae;
   }
+
+  .main-footer__logo:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .main-footer__logo {
+    margin-right: 58px;
+  }
+}

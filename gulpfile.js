@@ -43,6 +43,11 @@ gulp.task("css", function () {
 
 gulp.task("style", function(){
   return gulp.src("source/less/style.less")
+  .pipe(less())
+  .pipe(postcss([
+    autoprefixer()
+  ]))
+  .pipe(rename("style.css"))
   .pipe(gulp.dest("build/css"));
 });
 

@@ -1,19 +1,30 @@
-
 .socials {
   border-bottom: 1px solid @color-br__socials;
 }
 
 .socials__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   .no-indents();
-  padding: 30px 60px;
-  padding-bottom: 24px;
+  padding: 0;
+}
+
+.socials__item {
+  padding: 30px 20px 24px;
 }
 
 .socials__item:nth-child(2) {
   margin-top: -5px;
+}
+
+.socials__item:first-child {
+  padding-left: 0;
+}
+
+.socials__item:last-child {
+  padding-right: 0;
 }
 
 .socials__link {
@@ -23,20 +34,32 @@
 
 .socials__link:hover svg,
 .socials__link:focus svg {
-  fill: @color-footer-hover;
+  fill: @color-hover;
 }
 
-  .socials__link:active svg {
-    opacity: 0.3;
-  }
+.socials__link:active svg {
+  opacity: 0.3;
+}
 
 @media (min-width: @tablet-width) {
+
   .socials {
-    width: 140px;
+    width: 280px;
     border: none;
+  }
+
+  .socials__item {
+    padding-top: 0;
   }
 
   .socials__list {
     padding: 12px 0;
+  }
+}
+
+@media (min-width: @desctop-width) {
+
+  .socials__list {
+    padding-left: 19px;
   }
 }

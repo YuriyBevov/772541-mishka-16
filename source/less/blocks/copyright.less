@@ -19,22 +19,31 @@
 .copyright__logo svg {
   fill: #63d1bb;
 }
-  .copyright__logo:hover  svg,
-  .copyright__logo:focus  svg {
-      fill: @color-footer-hover;
-  }
 
-  .copyright__logo:active svg {
-    opacity: 0.3;
-  }
+.copyright__logo:hover  svg,
+.copyright__logo:focus  svg {
+    fill: @color-hover;
+}
 
+.copyright__logo:active svg {
+  opacity: 0.3;
+}
 
 @media (min-width: @tablet-width ) {
+
   .copyright {
     padding: 0;
     padding-top: 12px;
   }
+
   .copyright__title {
     margin-right: 29px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+
+  .copyright {
+    padding-top: 10px;
   }
 }

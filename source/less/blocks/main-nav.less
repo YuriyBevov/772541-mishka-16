@@ -39,29 +39,29 @@
   }
 }
 
-  .main-nav__link-search-icon {
-    position: absolute;
-    top: 5px;
-    left: -45px;
-    opacity: 0.2;
-  }
+.main-nav__link-search-icon {
+  position: absolute;
+  top: 5px;
+  left: -45px;
+  opacity: 0.2;
+}
 
-  .main-nav__link:hover svg,
-  .main-nav__link:focus svg {
-    fill: @color-icon-seablue;
-    opacity: 1;
-  }
+.main-nav__link:hover svg,
+.main-nav__link:focus svg {
+  fill: @color-icon-seablue;
+  opacity: 1;
+}
 
-    .main-nav__link:active svg{
-      opacity: 0.3;
-    }
+.main-nav__link:active svg{
+  opacity: 0.3;
+}
 
-  .main-nav__link-basket-icon {
-    position: absolute;
-    top: 4px;
-    left: -52px;
-    opacity: 0.2;
-  }
+.main-nav__link-basket-icon {
+  position: absolute;
+  top: 4px;
+  left: -51px;
+  opacity: 0.2;
+}
 
 .main-nav__item--logo {
   justify-content: center;
@@ -95,6 +95,7 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .main-nav__list {
     flex-direction: row;
   }
@@ -108,14 +109,16 @@
     &:nth-child(3) {
       order: 2;
       width: 168px;
-      padding-top: 20px;
+      padding-top: 18px;
     }
+
     &:nth-child(4) {
       order: 1;
       width: 84px;
       border-right: 1px solid @color-br;
       border-left: 1px solid @color-br;
     }
+
     &:nth-child(5) {
       justify-content: flex-end;
       order: 1;
@@ -134,7 +137,7 @@
   .main-nav__item--delivery{
     display: block;
     text-align: right;
-    padding-top: 20px;
+    padding-top: 18px;
     order: 3;
     flex-grow: 1;
   }
@@ -148,9 +151,11 @@
   .main-nav__link {
     .text(15px, 24px);
     background-color: transparent;
-    }
+  }
 
   .main-nav__link--search {
+    top: 22px;
+    left: 32px;
     width: 82px;
     font-size: 0;
     border-left: 1px solid @color-br;
@@ -162,8 +167,8 @@
   }
 
   .main-nav__link-search-icon {
-    top: 22px;
-    left: 32px;
+    top: 0;
+    left: 0;
   }
 
   .main-nav__logo-image {
@@ -173,6 +178,7 @@
 }
 
 @media (min-width: @desctop-width) {
+
   .main-nav__item--logo {
     order: 2;
     padding-left: 70px;
@@ -183,7 +189,7 @@
     display: block;
     order: 4;
     width: 220px;
-    padding-top: 20px;
+    padding-top: 18px;
   }
 
   .main-nav__item--delivery {
@@ -192,12 +198,14 @@
   }
 
   .main-nav__item {
+
     &:nth-child(2) {
       order: 1;
       width: 185px;
       padding: 32px 0;
       border-right: 1px solid @color-br;
     }
+
     &:nth-child(3) {
       order: 1;
       width: 195px;
@@ -223,6 +231,7 @@
   .main-nav__item--logo {
     padding-top: 9px;
   }
+
   .main-nav__logo-image {
     width: 149px;
     height: 72px;

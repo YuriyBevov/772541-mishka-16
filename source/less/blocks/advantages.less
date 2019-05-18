@@ -4,8 +4,9 @@
 
 .advantages__container {
   .container();
-  padding: 23px 30px 28px 30px;
+  padding: 23px 30px 27px;
 }
+
 .advantages__title {
   .text(25px,30px);
   font-weight: bold;
@@ -25,6 +26,8 @@
 .advantages__item {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  width: 260px;
   flex-direction: column;
   .text(17px, 20px);
   font-weight: bold;
@@ -111,13 +114,19 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .advantages__item {
+
+    &--flower::before {
+      top: 1px;
+      left: 8px;
+    }
+
     &--yarn {
       order: 2;
     }
 
     &--yarn::before {
-      top: 3px;
       left: 3px;
     }
 
@@ -132,16 +141,17 @@
     &--rocket {
       order: 4;
     }
+
     &--rocket::before {
-      top: 7px;
-      left: -7px;
+      left: -6px;
     }
+
     &--heart {
       order: 5;
     }
 
     &--heart::before {
-      top: 5px;
+      left: 7px;
     }
 
     &--gift {
@@ -149,19 +159,23 @@
     }
 
     &--gift::before {
-      top: 6px;
-      left: 2px;
+      left: 3px;
     }
-}
+  }
+
   .advantages {
     width: @tablet-width;
     padding-top: 34px;
     padding-bottom: 25px;
   }
 
+  .advantages__list {
+    padding-left: 2px;
+  }
+
   .advantages__title {
     .text(43px, 50px);
-    margin-bottom: 49px;
+    margin-bottom: 48px;
     margin-left: -5px;
   }
 
@@ -173,56 +187,60 @@
 }
 
 @media (min-width: @desctop-width) {
+
   .advantages__container {
     padding-left: 226px;
   }
 
   .advantages {
     width: @desctop-width;
-    padding-top: 34px;
-    padding-bottom: 35px;
+    padding-top: 35px;
+    padding-bottom: 29px;
   }
 
   .advantages__title {
     .text(53px, 57px);
-    margin-bottom: 48px;
+    margin-bottom: 46px;
     margin-left: -5px;
+  }
+
+  .advantages__list {
+    padding-left: 0;
   }
 
   .advantages__item {
     width: 350px;
     .text(20px, 23px);
-    margin-bottom: 53px;
+    margin-bottom: 54px;
 
-      &--flower::before {
-        top: 0;
-        left: 9px;
-      }
+    &--flower::before {
+      top: 2px;
+      left: 8px;
+    }
 
-      &--price::before {
-        top: 3px;
-        left: 1px;
-      }
+    &--price::before {
+      top: 3px;
+      left: 0;
+    }
 
-      &--heart::before {
-        top: 4px;
-        left: 8px;
-      }
+    &--heart::before {
+      top: 3px;
+      left: 7px;
+    }
 
+    &--yarn::before {
+      top: 5px;
+      left: 2px;
+    }
 
-      &--yarn::before {
-        top: 4px;
-        left: 3px;
-      }
+    &--rocket::before {
+      top: 6px;
+      left: -7px;
+    }
 
-      &--rocket::before {
-        top: 6px;
-        left: -6px;
-      }
-
-      &--gift::before {
-        top: 5px;
-        left: 3px;
-      }
+    &--gift::before {
+      top: 4px;
+      left: 2px;
+    }
   }
 }

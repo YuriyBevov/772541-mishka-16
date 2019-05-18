@@ -16,9 +16,9 @@
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="main-header--inner">
+    <header class="main-header__inner">
       <div class="main-header__container">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--logo">
@@ -30,13 +30,13 @@
                 </picture>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--opened main-nav--nojs">
+            <li class="main-nav__item main-nav__item--opened">
               <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item main-nav__item--opened main-nav--nojs">
+            <li class="main-nav__item main-nav__item--opened">
               <a class="main-nav__link main-nav__link--yarn" href="yarn-offer.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item main-nav__item--opened main-nav--nojs">
+            <li class="main-nav__item main-nav__item--opened">
               <a class="main-nav__link main-nav__link--search" href="#">
                 <svg class="main-nav__link-search-icon" width="17.6px" height="17.6px">
                   <use xlink:href="#icon-search"></use>
@@ -44,7 +44,7 @@
                 Поиск по сайту
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--opened main-nav--nojs">
+            <li class="main-nav__item main-nav__item--opened">
               <a class="main-nav__link main-nav__link--basket" href="#">
                 <svg class="main-nav__link-basket-icon" width="21px" height="18px">
                   <use xlink:href="#icon-cart"></use>
@@ -52,10 +52,10 @@
                 Корзина: <span class="basket-status">пока пуста</span>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--opened main-nav__item--new main-nav--nojs">
+            <li class="main-nav__item main-nav__item--new">
               <a class="main-nav__link" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__item main-nav__item--opened main-nav__item--sale main-nav--nojs">
+            <li class="main-nav__item main-nav__item--sale">
               <a class="main-nav__link" href="#">Распродажа</a>
             </li>
             <li class="main-nav__item main-nav__item--delivery">
@@ -87,13 +87,14 @@
                   <div class="catalog-item__wrapper">
                     <h2 class="catalog-item__title"><a class="catalog-item__link" href="#">Зайчик-попрыгайчик</a></h2>
                     <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
-                    <p class="catalog-item__price">1 200 руб.
+                    <div class="catalog-item__price-wrapper">
+                      <b class="catalog-item__price">1 200 руб.</b>
                       <a class="catalog-item__basket" href="#">
-                        <svg width="21px" height="18px">
+                        <svg width="21px" height="18px" aria-label="корзина">
                           <use xlink:href="#icon-cart"></use>
                         </svg>
                       </a>
-                    </p>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog__item catalog-item">
@@ -109,15 +110,16 @@
                     </picture>
                   </a>
                   <div class="catalog-item__wrapper">
-                    <h2 class="catalog-item__title"><a class="catalog-item__link" href="#">Корзинка для белья</a></h2>
+                    <h2 class="catalog-item__title catalog-item__title--mod"><a class="catalog-item__link" href="#">Корзинка для белья</a></h2>
                     <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-                    <p class="catalog-item__price">690 руб.
+                    <div class="catalog-item__price-wrapper">
+                      <b class="catalog-item__price">690 руб.</b>
                       <a class="catalog-item__basket" href="#">
-                        <svg width="21px" height="18px">
+                        <svg width="21px" height="18px" aria-label="корзина">
                           <use xlink:href="#icon-cart"></use>
                         </svg>
                       </a>
-                    </p>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog__item catalog-item">
@@ -135,13 +137,14 @@
                   <div class="catalog-item__wrapper">
                     <h2 class="catalog-item__title"><a class="catalog-item__link" href="#">Большая корзинка для&nbsp;игрушек</a></h2>
                     <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
-                    <p class="catalog-item__price">1 500 руб.
+                    <div class="catalog-item__price-wrapper">
+                      <b class="catalog-item__price">1 500 руб.</b>
                       <a class="catalog-item__basket" href="#">
-                        <svg width="21px" height="18px">
+                        <svg width="21px" height="18px"  aria-label="корзина">
                           <use xlink:href="#icon-cart"></use>
                         </svg>
                       </a>
-                    </p>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -150,7 +153,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__container">
-        <a href="#" aria-label="Мишка Логотип" class="main-footer__logo">
+        <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Мишка Логотип" class="main-footer__logo">
         <svg width="101.615px" height="34.056px">
           <use xlink:href="#icon-logo-footer"></use>
         </svg>
@@ -182,7 +185,7 @@
         </div>
         <div class="copyright">
           <h3 class="copyright__title">Разработано</h3>
-            <a class="copyright__logo" href="#" aria-label="HTMLAcademy Логотип">
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTMLAcademy Логотип">
               <svg width="26.943px" height="34.09px">
                 <use xlink:href="#icon-logo-htmlacademy"></use>
               </svg>
