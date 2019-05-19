@@ -153,8 +153,8 @@
       <section class="video">
         <div class="video__container">
           <div class="video__wrapper">
-            <h1 class="video__title video__title--top">Процесс производства</h1>
-            <div class="video__wrapper-player">
+          <h2 class="video__title">Процесс производства</h2>
+          <div class="video__wrapper-player">
               <picture class="video__img">
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
@@ -167,7 +167,6 @@
               <button class="video__play-button" aria-label="Кнопка воспроизведения"></button>
             </div>
             <div class="video__wrapper-info">
-              <h1 class="video__title video__title--bottom">Процесс производства</h1>
               <p class="video__description">
                 По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
               </p>
@@ -219,6 +218,29 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal--closed">
+      <div class="modal__container">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__description">Выберите размер:</p>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="modal-form__list">
+            <li class="modal-form__item">
+              <input class="modal-form__control visually-hidden" type="checkbox" name="size-S" id="S" checked>
+              <label class="modal-form__label" for="S">S</label>
+            </li>
+            <li class="modal-form__item">
+              <input class="modal-form__control visually-hidden" type="checkbox" name="size-M" id="M">
+              <label class="modal-form__label" for="M">M</label>
+            </li>
+            <li class="modal-form__item">
+              <input class="modal-form__control visually-hidden" type="checkbox" name="size-L" id="L">
+              <label class="modal-form__label" for="L">L</label>
+            </li>
+          </ul>
+          <button class="modal-form__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
     <script src="js/script.min.js"></script>
   </body>
 </html>

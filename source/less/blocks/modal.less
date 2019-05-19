@@ -45,45 +45,6 @@
   color: @color-text--lightgrey;
 }
 
-.modal__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.modal__item-size {
-  width: 82px;
-  padding: 15px 0;
-  background-color: transparent;
-  border: 2px solid rgba(68,68,68,0.1);
-  text-align: center;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    border: 2px solid rgba(68,68,68,0.3);
-  }
-}
-
-.modal__item-size--current {
-  border:  2px solid @color-br__modal-current;
-}
-
-.modal__button {
-  width: 260px;
-  min-height: 52px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-  padding: 0;
-  color: @color-bg;
-  background-color: @color-bg__modal__button;
-  cursor: pointer;
-}
 
 @media (min-width: @tablet-width) {
 
@@ -104,16 +65,4 @@
     margin-bottom: 21px
   }
 
-  .modal__list {
-    width: 350px;
-    margin-bottom: 32px;
-  }
-
-  .modal__item-size {
-    width: 112px;
-  }
-
-  .modal__button {
-    width: 350px;
-  }
 }
