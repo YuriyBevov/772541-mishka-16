@@ -45,11 +45,11 @@
 }
 
 .form__list--color {
-  padding-top: 37px;
+  padding-top: 36px;
 }
 
 .form__list--type {
-  padding-top: 35px;
+  padding-top: 34px;
   margin-bottom: 19px;
 }
 
@@ -154,7 +154,7 @@
 }
 
 .form__list--user {
-  padding: 30px 0 12px;
+  padding: 29px 0 11px;
 }
 
 .form__data {
@@ -163,6 +163,7 @@
   padding: 0;
   border: none;
   cursor: pointer;
+  padding-right: 50px;
 }
 
 .form__data--phone {
@@ -261,9 +262,10 @@
   width: 260px;
   min-height: 142px;
   border: none;
-  padding: 15px;
-  margin-top: 25px;
-  margin-bottom: 13px;
+  padding-top: 14px;
+  padding-left: 15px;
+  margin-top: 23px;
+  margin-bottom: 16px;
   resize: vertical;
   border: 2px solid black;
 }
@@ -285,14 +287,15 @@
 .form__button {
   display: block;
   .button();
+  .text(17px, 16px);
   width: 260px;
-  padding: 15px 5px;
+  padding: 16px 5px;
   margin-bottom: 55px;
 }
 
 @media (min-width: @tablet-width) {
 
-  .form__container--mod {//
+  .form__container--mod {
     width: 100%;
     background-color: @color-bg--lightgrey;
   }
@@ -302,18 +305,18 @@
     margin: 0 auto;
   }
 
-  .form__wrapper--type {//
+  .form__wrapper--type {
     padding-top: 73px;
     align-items: baseline;
   }
 
-  .form__wrapper--color {//
+  .form__wrapper--color {
     padding-top: 65px;
     padding-bottom: 11px;
     align-items: baseline;
   }
 
-  .form__wrapper--user {//
+  .form__wrapper--user {
     padding-top: 66px;
     padding-bottom: 26px;
     align-items: baseline;
@@ -363,11 +366,11 @@
     position: relative;
   }
 
-  .form__title {//
+  .form__title {
     width: 165px;
   }
 
-  .form__title-border {//
+  .form__title-border {
     display: none;
   }
 
@@ -429,7 +432,7 @@
     margin-right: 10px;
   }
 
-  .form__list--type {//
+  .form__list--type {
     width: 501px;
     margin-bottom: 10px;
   }
@@ -447,7 +450,7 @@
     .text(19px, 18px);
   }
 
-  .form__item--type {//
+  .form__item--type {
     margin-bottom: 58px;
   }
 
@@ -469,7 +472,7 @@
     padding-left: 81px;
   }
 
-  .form__radio-label::before {//
+  .form__radio-label::before {
     top: -16px;
     left: 0px;
     width: 52px;
@@ -525,7 +528,6 @@
   }
 
   .form__wrapper--icon {
-
   }
 
   .form__data--phone,
@@ -547,12 +549,10 @@
 
   .form__list--user {
     width: 700px;
-
   }
 
   .form__list--color{
      width: 725px;
-
    }
 
    .form__textarea {
