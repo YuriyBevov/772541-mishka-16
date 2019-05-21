@@ -6,6 +6,36 @@
   border: none;
   padding: 0;
   position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main-nav__toggle--opened {
+  position: absolute;
+  top: 32px;
+  right: 30px;
+  width: 20px;
+  height: 14px;
+  content: "";
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/menu-open.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 14px;
+}
+
+.main-nav__toggle--closed {
+  position: absolute;
+  top: 29px;
+  right: 29px;
+  width: 21px;
+  height: 20px;
+  content: "";
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/menu-close.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 .main-nav__list {
@@ -30,10 +60,12 @@
   text-decoration: none;
   color: @color-text;
   background-color: @color-bg;
+
   &:hover,
   &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
@@ -52,7 +84,7 @@
   opacity: 1;
 }
 
-.main-nav__link:active svg{
+.main-nav__link:active svg {
   opacity: 0.3;
 }
 
@@ -71,10 +103,12 @@
 .main-nav__logo-image {
   width: 86px;
   height: 35px;
+
   &:hover,
   &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -95,9 +129,12 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .main-nav__list {
     flex-direction: row;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__item {
@@ -134,7 +171,7 @@
     justify-content: flex-start;
   }
 
-  .main-nav__item--delivery{
+  .main-nav__item--delivery {
     display: block;
     text-align: right;
     padding-top: 18px;
@@ -178,10 +215,10 @@
 }
 
 @media (min-width: @desctop-width) {
-
   .main-nav__item--logo {
     order: 2;
     padding-left: 70px;
+    padding-top: 9px;
   }
 
   .main-nav__item--new,
@@ -198,7 +235,6 @@
   }
 
   .main-nav__item {
-
     &:nth-child(2) {
       order: 1;
       width: 185px;
@@ -226,10 +262,6 @@
   .main-nav__link--catalog,
   .main-nav__link--yarn {
     .text(17px, 24px);
-  }
-
-  .main-nav__item--logo {
-    padding-top: 9px;
   }
 
   .main-nav__logo-image {

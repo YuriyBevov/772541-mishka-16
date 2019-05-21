@@ -35,9 +35,6 @@
   margin-bottom: 28px;
   color: @color-text;
   background-color: @color-bg;
-}
-
-.advantages__item {
 
   &--flower::before {
     position: absolute;
@@ -114,8 +111,10 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .advantages__item {
+    width: 50%;
+    .text(20px, 22px);
+    margin-bottom: 56px;
 
     &--flower::before {
       top: 1px;
@@ -178,16 +177,9 @@
     margin-bottom: 48px;
     margin-left: -5px;
   }
-
-  .advantages__item {
-    width: 50%;
-    .text(20px, 22px);
-    margin-bottom: 56px;
-  }
 }
 
 @media (min-width: @desctop-width) {
-
   .advantages__container {
     padding-left: 226px;
   }

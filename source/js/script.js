@@ -51,7 +51,7 @@ if(basket.lenght > 0) {
 
 var popup = document.querySelector('.modal');
 
-if(document.querySelector('.main-nav__link--basket').lenght > 0) {
+if(document.querySelector('.main-nav__link--basket').length > 0) {
   var basket = document.querySelector('.main-nav__link--basket');
 
   basket.addEventListener('click', function() {
@@ -74,7 +74,7 @@ if(document.querySelector('.catalog-item__basket').length > 0) {
 
   var link = document.querySelectorAll('.catalog-item__basket');
 
-  for(var i = 0; i < link.length; i++) {
+  for (var i = 0; i < link.length; i++) {
     link[i].addEventListener('click', function(event) {
       event.preventDefault();
       popup.classList.add('modal--opened');
