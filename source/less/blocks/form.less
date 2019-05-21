@@ -1,5 +1,5 @@
 .form__container {
-  .no-indents();
+    .no-indents();
   display: flex;
   flex-wrap: wrap;
   .container();
@@ -12,7 +12,7 @@
   flex-wrap: wrap;
 }
 
-.form__wrapper--icon {
+.form__wrapper-icon {
   position: relative;
 }
 
@@ -34,19 +34,19 @@
 }
 
 .form__title--mail {
-   width: 82px;
+  width: 82px;
 }
 
 .form__list {
   .no-indents();
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction:  column;
 }
 
 .form__list--color {
   padding-top: 36px;
-}
+  }
 
 .form__list--type {
   padding-top: 34px;
@@ -93,8 +93,8 @@
 
 .form__checkbox:focus + .form__checkbox-label::before,
 .form__checkbox:hover + .form__checkbox-label::before {
-  border: 2px solid @color-br__checkbox;
-}
+    border: 2px solid @color-br__checkbox;
+  }
 
 .form__checkbox:active + .form__checkbox-label::before {
   border: 2px solid rgba(68,68,68,0.3);
@@ -161,9 +161,10 @@
   width: 260px;
   min-height: 51px;
   padding: 0;
+  padding-right: 50px;
   border: none;
   cursor: pointer;
-  padding-right: 50px;
+  text-align: left;
 }
 
 .form__data--phone {
@@ -186,7 +187,7 @@
 }
 
 .form__data::-ms-input-placeholder { // для ИЕ
-  .text(19px, 18px);
+    .text(19px, 18px);
   color: rgba(68, 68, 68, 0.3);
 }
 
@@ -527,9 +528,6 @@
     padding-top: 65px;
   }
 
-  .form__wrapper--icon {
-  }
-
   .form__data--phone,
   .form__data--mail {
     width: 700px;
@@ -552,10 +550,10 @@
   }
 
   .form__list--color{
-     width: 725px;
-   }
+    width: 725px;
+  }
 
-   .form__textarea {
+  .form__textarea {
     width: 700px;
   }
 
