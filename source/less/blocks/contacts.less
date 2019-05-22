@@ -1,6 +1,11 @@
 .contacts__container {
   .container();
-  padding: 27px 30px 39px;
+  padding: 27px 30px 0;
+}
+
+.contacts__container--button {
+  padding-top: 3px;
+  padding-bottom: 39px;
 }
 
 .contacts__wrapper {
@@ -95,12 +100,20 @@
     .container();
   }
 
+  .contacts__container--button {
+    margin-top: 3px;
+  }
+
   .contacts__wrapper {
     width: 100%;
     .no-indents();
     padding-top: 23px;
     padding-left: 2px;
     margin-bottom: 26px;
+  }
+
+  .contacts__wrapper-map {
+    margin-bottom: 55px;
   }
 
   .contacts__title {
@@ -198,7 +211,8 @@
     position: absolute;
     width: 525px;
     top: 46px;
-    right: 86px;
+    right: auto;
+    left: 50%;
   }
 
   .contacts__map {

@@ -21,6 +21,7 @@ var server = require("browser-sync").create();
 
 gulp.task("js", function(){
   return gulp.src("source/js/script.js")
+  .pipe(plumber())
   .pipe(jsmin())
   .pipe(rename("script.min.js"))
   .pipe(gulp.dest("build/js"));
@@ -98,6 +99,7 @@ gulp.task("server", function () {
   gulp.watch("source/img/**/*.{jpg,png,svg}", gulp.series("image", "webp", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("js", "refresh"));
 });
 
 gulp.task("refresh", function(done){
