@@ -3,6 +3,8 @@ var button = document.querySelector('.main-nav__toggle');
 var modal = document.querySelector('.modal');
 
 navMenu.classList.remove('main-nav--nojs');
+navMenu.classList.remove('main-nav--opened');
+navMenu.classList.add('main-nav--closed');
 
 button.addEventListener('click', function() {
   if (navMenu.classList.contains('main-nav--opened')) {

@@ -63,7 +63,13 @@
 
   .catalog__list {
     flex-direction: row;
-    justify-content: space-between;
+  }
+
+  .catalog__item {
+    margin-right: 50px;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
   }
 
   .catalog__title {
